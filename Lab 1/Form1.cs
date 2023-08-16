@@ -13,6 +13,12 @@ namespace Lab_1
     public partial class Form1 : Form
     {
         double totalCost = 0;
+        double taxRate = 0.05;
+        double hamburgerPrice = 6.95;
+        double pizzaPrice = 5.95;
+        double saladPrice = 4.95;
+
+
         public Form1()
         {
             InitializeComponent();
@@ -31,15 +37,15 @@ namespace Lab_1
             totalCost = 0;
 
             if (rdbHamburger.Checked)
-                totalCost += 6.95;
+                totalCost += hamburgerPrice;
             if (rdbPizza.Checked)
-                totalCost += 5.95;
+                totalCost += pizzaPrice;
             if (rdbSalad.Checked)
-                totalCost += 4.95;
+                totalCost += saladPrice;
 
             txbSubtotal.Text = totalCost.ToString();
-            txbTax.Text = Math.Round(totalCost * 0.05, 2).ToString();
-            txbTotal.Text = Math.Round(totalCost * 1.05, 2).ToString();
+            txbTax.Text = Math.Round(totalCost * taxRate, 2).ToString();
+            txbTotal.Text = Math.Round(totalCost * (1+ taxRate), 2).ToString();
         }
 
         private void rdbHamburger_CheckedChanged(object sender, EventArgs e)
@@ -72,6 +78,17 @@ namespace Lab_1
             }
         }
 
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            txbSubtotal.Text = "";
+            txbTax.Text = "";
+            txbTotal.Text = "";
+        }
 
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            //Environment.Exit(0);
+        }
     }
 }
