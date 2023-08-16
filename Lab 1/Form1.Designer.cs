@@ -39,8 +39,8 @@
             this.chbxLettuce = new System.Windows.Forms.CheckBox();
             this.gbxPizza = new System.Windows.Forms.GroupBox();
             this.chbxOlives = new System.Windows.Forms.CheckBox();
-            this.chbxSausage = new System.Windows.Forms.CheckBox();
             this.chbxPepperoni = new System.Windows.Forms.CheckBox();
+            this.chbxSausage = new System.Windows.Forms.CheckBox();
             this.bdOrder = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -202,7 +202,7 @@
             this.gbxPizza.Size = new System.Drawing.Size(310, 199);
             this.gbxPizza.TabIndex = 6;
             this.gbxPizza.TabStop = false;
-            this.gbxPizza.Text = "Add-on items ($0.75/each)";
+            this.gbxPizza.Text = "Add-on items ($0.5/each)";
             // 
             // chbxOlives
             // 
@@ -217,19 +217,6 @@
             this.chbxOlives.Text = "Olives";
             this.chbxOlives.UseVisualStyleBackColor = false;
             // 
-            // chbxSausage
-            // 
-            this.chbxSausage.AutoSize = true;
-            this.chbxSausage.BackColor = System.Drawing.SystemColors.Desktop;
-            this.chbxSausage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chbxSausage.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.chbxSausage.Location = new System.Drawing.Point(23, 87);
-            this.chbxSausage.Name = "chbxSausage";
-            this.chbxSausage.Size = new System.Drawing.Size(103, 28);
-            this.chbxSausage.TabIndex = 1;
-            this.chbxSausage.Text = "Sausage";
-            this.chbxSausage.UseVisualStyleBackColor = false;
-            // 
             // chbxPepperoni
             // 
             this.chbxPepperoni.AutoSize = true;
@@ -242,6 +229,19 @@
             this.chbxPepperoni.TabIndex = 0;
             this.chbxPepperoni.Text = "Pepperoni";
             this.chbxPepperoni.UseVisualStyleBackColor = false;
+            // 
+            // chbxSausage
+            // 
+            this.chbxSausage.AutoSize = true;
+            this.chbxSausage.BackColor = System.Drawing.SystemColors.Desktop;
+            this.chbxSausage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chbxSausage.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.chbxSausage.Location = new System.Drawing.Point(23, 87);
+            this.chbxSausage.Name = "chbxSausage";
+            this.chbxSausage.Size = new System.Drawing.Size(103, 28);
+            this.chbxSausage.TabIndex = 1;
+            this.chbxSausage.Text = "Sausage";
+            this.chbxSausage.UseVisualStyleBackColor = false;
             // 
             // bdOrder
             // 
@@ -368,7 +368,7 @@
             this.gbxSalad.Size = new System.Drawing.Size(310, 199);
             this.gbxSalad.TabIndex = 3;
             this.gbxSalad.TabStop = false;
-            this.gbxSalad.Text = "Add-on items ($0.75/each)";
+            this.gbxSalad.Text = "Add-on items ($0.25/each)";
             // 
             // chbxBread
             // 
@@ -422,9 +422,9 @@
             this.Controls.Add(this.bdOrder);
             this.Controls.Add(this.gbCourse);
             this.Controls.Add(this.btnOrder);
+            this.Controls.Add(this.gbxHamburger);
             this.Controls.Add(this.gbxSalad);
             this.Controls.Add(this.gbxPizza);
-            this.Controls.Add(this.gbxHamburger);
             this.Name = "Form1";
             this.Text = "Lunch Order";
             this.Load += new System.EventHandler(this.Form1_Load);

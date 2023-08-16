@@ -13,14 +13,16 @@ namespace Lab_1
     public partial class Form1 : Form
     {
         double totalCost = 0;
-        double taxRate = 0.05;
-        double hamburgerPrice = 6.95;
-        double hamburgerAddOnPrice = 0.75;
-        double pizzaPrice = 5.95;
-        double pizzaAddOnPrice = 0.5;
-        double saladPrice = 4.95;
-        double saladAddOnPrice = 0.25;
+        const double taxRate = 0.05;
 
+        const double hamburgerPrice = 6.95;
+        const double hamburgerAddOnPrice = 0.75;
+
+        const double pizzaPrice = 5.95;
+        const double pizzaAddOnPrice = 0.5;
+
+        const double saladPrice = 4.95;
+        const double saladAddOnPrice = 0.25;
 
         public Form1()
         {
@@ -141,6 +143,8 @@ namespace Lab_1
         {
             resetTxtBoxes();
             resetChkBoxes();
+
+            rdbHamburger.Checked = true;
         }
 
 
@@ -151,6 +155,7 @@ namespace Lab_1
             //Environment.Exit(0);
         }
 
+        // a reusable method for reseting text boxes
         private void resetTxtBoxes()
         {
             txbSubtotal.Text = "";
@@ -158,6 +163,7 @@ namespace Lab_1
             txbTotal.Text = "";
         }
 
+        // a reusable method for reseting check boxes
         private void resetChkBoxes()
         {
             chbxLettuce.Checked = false;
@@ -172,5 +178,6 @@ namespace Lab_1
             chbxBacon.Checked = false;
             chbxBread.Checked = false;
         }
+
     }
 }
