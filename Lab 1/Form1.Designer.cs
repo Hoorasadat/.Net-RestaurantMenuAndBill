@@ -51,7 +51,7 @@
             this.btnReset = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.gbxSalad = new System.Windows.Forms.GroupBox();
-            this.chbbxBread = new System.Windows.Forms.CheckBox();
+            this.chbxBread = new System.Windows.Forms.CheckBox();
             this.chbxBacon = new System.Windows.Forms.CheckBox();
             this.chbxCrouton = new System.Windows.Forms.CheckBox();
             this.gbCourse.SuspendLayout();
@@ -149,7 +149,6 @@
             this.gbxHamburger.TabIndex = 2;
             this.gbxHamburger.TabStop = false;
             this.gbxHamburger.Text = "Add-on items ($0.75/each)";
-            this.gbxHamburger.UseWaitCursor = true;
             // 
             // chbxFries
             // 
@@ -163,7 +162,6 @@
             this.chbxFries.TabIndex = 2;
             this.chbxFries.Text = "French fries";
             this.chbxFries.UseVisualStyleBackColor = false;
-            this.chbxFries.UseWaitCursor = true;
             // 
             // chbxKetchup
             // 
@@ -177,7 +175,6 @@
             this.chbxKetchup.TabIndex = 1;
             this.chbxKetchup.Text = "Ketchup, mustard, and mayo";
             this.chbxKetchup.UseVisualStyleBackColor = false;
-            this.chbxKetchup.UseWaitCursor = true;
             // 
             // chbxLettuce
             // 
@@ -191,14 +188,13 @@
             this.chbxLettuce.TabIndex = 0;
             this.chbxLettuce.Text = "Lettuce, omato, and onion";
             this.chbxLettuce.UseVisualStyleBackColor = false;
-            this.chbxLettuce.UseWaitCursor = true;
             // 
             // gbxPizza
             // 
             this.gbxPizza.BackColor = System.Drawing.SystemColors.Desktop;
             this.gbxPizza.Controls.Add(this.chbxOlives);
-            this.gbxPizza.Controls.Add(this.chbxSausage);
             this.gbxPizza.Controls.Add(this.chbxPepperoni);
+            this.gbxPizza.Controls.Add(this.chbxSausage);
             this.gbxPizza.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbxPizza.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.gbxPizza.Location = new System.Drawing.Point(377, 42);
@@ -207,7 +203,6 @@
             this.gbxPizza.TabIndex = 6;
             this.gbxPizza.TabStop = false;
             this.gbxPizza.Text = "Add-on items ($0.75/each)";
-            this.gbxPizza.UseWaitCursor = true;
             // 
             // chbxOlives
             // 
@@ -221,7 +216,6 @@
             this.chbxOlives.TabIndex = 2;
             this.chbxOlives.Text = "Olives";
             this.chbxOlives.UseVisualStyleBackColor = false;
-            this.chbxOlives.UseWaitCursor = true;
             // 
             // chbxSausage
             // 
@@ -235,7 +229,6 @@
             this.chbxSausage.TabIndex = 1;
             this.chbxSausage.Text = "Sausage";
             this.chbxSausage.UseVisualStyleBackColor = false;
-            this.chbxSausage.UseWaitCursor = true;
             // 
             // chbxPepperoni
             // 
@@ -249,7 +242,6 @@
             this.chbxPepperoni.TabIndex = 0;
             this.chbxPepperoni.Text = "Pepperoni";
             this.chbxPepperoni.UseVisualStyleBackColor = false;
-            this.chbxPepperoni.UseWaitCursor = true;
             // 
             // bdOrder
             // 
@@ -366,7 +358,7 @@
             // gbxSalad
             // 
             this.gbxSalad.BackColor = System.Drawing.SystemColors.Desktop;
-            this.gbxSalad.Controls.Add(this.chbbxBread);
+            this.gbxSalad.Controls.Add(this.chbxBread);
             this.gbxSalad.Controls.Add(this.chbxBacon);
             this.gbxSalad.Controls.Add(this.chbxCrouton);
             this.gbxSalad.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -377,21 +369,19 @@
             this.gbxSalad.TabIndex = 3;
             this.gbxSalad.TabStop = false;
             this.gbxSalad.Text = "Add-on items ($0.75/each)";
-            this.gbxSalad.UseWaitCursor = true;
             // 
-            // chbbxBread
+            // chbxBread
             // 
-            this.chbbxBread.AutoSize = true;
-            this.chbbxBread.BackColor = System.Drawing.SystemColors.Desktop;
-            this.chbbxBread.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chbbxBread.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.chbbxBread.Location = new System.Drawing.Point(23, 128);
-            this.chbbxBread.Name = "chbbxBread";
-            this.chbbxBread.Size = new System.Drawing.Size(129, 28);
-            this.chbbxBread.TabIndex = 2;
-            this.chbbxBread.Text = "Bread sticks";
-            this.chbbxBread.UseVisualStyleBackColor = false;
-            this.chbbxBread.UseWaitCursor = true;
+            this.chbxBread.AutoSize = true;
+            this.chbxBread.BackColor = System.Drawing.SystemColors.Desktop;
+            this.chbxBread.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chbxBread.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.chbxBread.Location = new System.Drawing.Point(23, 128);
+            this.chbxBread.Name = "chbxBread";
+            this.chbxBread.Size = new System.Drawing.Size(129, 28);
+            this.chbxBread.TabIndex = 2;
+            this.chbxBread.Text = "Bread sticks";
+            this.chbxBread.UseVisualStyleBackColor = false;
             // 
             // chbxBacon
             // 
@@ -405,7 +395,6 @@
             this.chbxBacon.TabIndex = 1;
             this.chbxBacon.Text = "Bacon bits";
             this.chbxBacon.UseVisualStyleBackColor = false;
-            this.chbxBacon.UseWaitCursor = true;
             // 
             // chbxCrouton
             // 
@@ -419,7 +408,6 @@
             this.chbxCrouton.TabIndex = 0;
             this.chbxCrouton.Text = "Croutons";
             this.chbxCrouton.UseVisualStyleBackColor = false;
-            this.chbxCrouton.UseWaitCursor = true;
             // 
             // Form1
             // 
@@ -429,14 +417,14 @@
             this.BackgroundImage = global::Lab_1.Properties.Resources.menu;
             this.CancelButton = this.btnExit;
             this.ClientSize = new System.Drawing.Size(794, 485);
-            this.Controls.Add(this.gbxPizza);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.bdOrder);
-            this.Controls.Add(this.gbxHamburger);
             this.Controls.Add(this.gbCourse);
             this.Controls.Add(this.btnOrder);
             this.Controls.Add(this.gbxSalad);
+            this.Controls.Add(this.gbxPizza);
+            this.Controls.Add(this.gbxHamburger);
             this.Name = "Form1";
             this.Text = "Lunch Order";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -479,7 +467,7 @@
         private System.Windows.Forms.CheckBox chbxSausage;
         private System.Windows.Forms.CheckBox chbxPepperoni;
         private System.Windows.Forms.GroupBox gbxSalad;
-        private System.Windows.Forms.CheckBox chbbxBread;
+        private System.Windows.Forms.CheckBox chbxBread;
         private System.Windows.Forms.CheckBox chbxBacon;
         private System.Windows.Forms.CheckBox chbxCrouton;
     }
