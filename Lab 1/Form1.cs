@@ -12,6 +12,7 @@ namespace Lab_1
 {
     public partial class Form1 : Form
     {
+        //created by hoora august 16
         double totalCost = 0;
         const double taxRate = 0.05;
 
@@ -87,9 +88,9 @@ namespace Lab_1
             }
 
             // calculate and show the subtotal, tax, and total cost
-            txbSubtotal.Text = totalCost.ToString();
-            txbTax.Text = Math.Round(totalCost * taxRate, 2).ToString();
-            txbTotal.Text = Math.Round(totalCost * (1+ taxRate), 2).ToString();
+            txbSubtotal.Text = totalCost.ToString("C");
+            txbTax.Text = Math.Round(totalCost * taxRate, 2).ToString("C");
+            txbTotal.Text = Math.Round(totalCost * (1+ taxRate), 2).ToString("C");
         }
 
         // functions for showing/ hiding related add-on for each item in the menue:
